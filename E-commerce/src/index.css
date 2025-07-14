@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Import Tailwind core (theme, base, components, utilities) */
+@import "tailwindcss";
+
+/* 1. Define global resets using @layer base */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+}
+
+/* 2. Define custom theme tokens using @theme */
+@theme {
+  --spacing: 0.25rem;
+  /* Example extender: you can add colors, fonts, sizes here */
+  /* e.g. --color-primary: #3490dc; */
+}
+
+/* 3. Add your reusable classes in @layer components */
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-500 pl-5
+           max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-300 max-sm:rounded-full;
+  }
+}
+
+/* 4. Custom utility classes in @layer utilities */
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply text-slate-500 text-lg leading-7;
+  }
+}
