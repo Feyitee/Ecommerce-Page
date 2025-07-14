@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* Import Tailwind core (theme, base, components, utilities) */
-@import "tailwindcss";
-
-/* 1. Define global resets using @layer base */
 @layer base {
   * {
     margin: 0;
@@ -13,7 +9,6 @@
   }
 }
 
-/* 2. Define custom theme tokens using @theme */
 @theme {
   --spacing: 0.25rem;
   /* Example extender: you can add colors, fonts, sizes here */
