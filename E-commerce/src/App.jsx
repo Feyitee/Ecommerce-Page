@@ -1,15 +1,17 @@
 import React from "react";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav.jsx";
+
 import {
   CustomerReview,
-  Footer,
   Hero,
+  Footer,
   PopularProducts,
   Services,
   SpecialOffers,
   Subscribe,
   SuperQuality,
-} from "./index.js";
+} from "./sections/index.js";
+
 const App = () => {
   return (
     <div className="relative">
