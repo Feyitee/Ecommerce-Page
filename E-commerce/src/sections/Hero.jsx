@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div
         className="relative xl:w-2/5 flex flex-col 
-      items-center justify-center w-full max-xl:padding-padding-x pt-28"
+      items-center justify-center w-full max-xl:padding-x pt-28"
       >
         <p>Our Summer Collection</p>
         <h1>
@@ -19,7 +19,6 @@ const Hero = () => {
           Shoes
         </h1>
         <p>
-          {" "}
           Discover stylish Nike arrival, quality comfort, and innovations from
           active life
         </p>
