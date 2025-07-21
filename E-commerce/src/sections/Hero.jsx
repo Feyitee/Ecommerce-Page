@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import { statistics } from "../constants/index";
+import { bigShoe1 } from "../assets/images";
+
 const Hero = () => {
   return (
     <section
@@ -29,10 +31,10 @@ const Hero = () => {
             The New Arrival
           </span>
           <br />
-          <span className="text-red-400 inline-block mt-3">Nike</span>
-          Shoes
+          <span className="text-red-400 inline-block mr-5 mt-3">Nike</span>
+          <span className="inline-block mt-3">Shoes</span>
         </h1>
-        <p>
+        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
           Discover stylish Nike arrival, quality comfort, and innovations from
           active life
         </p>
@@ -45,12 +47,20 @@ const Hero = () => {
           {statistics.map((stat) => {
             return (
               <div key={stat.label}>
-                <p>{stat.value}</p>
-                <p>{stat.label}</p>
+                <p className="text-4xl font-palanquin font-bold">
+                  {stat.value}
+                </p>
+                <p className="leading-7 font-montserrat text-slate-gray">
+                  {stat.label}
+                </p>
               </div>
             );
           })}
         </div>
+      </div>
+
+      <div>
+        <img src={bigShoe1} />
       </div>
     </section>
   );
