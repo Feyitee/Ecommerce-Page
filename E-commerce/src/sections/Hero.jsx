@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
-import { statistics } from "../constants/index";
+import { shoes, statistics } from "../constants/index";
 import { bigShoe1 } from "../assets/images";
+import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
   return (
@@ -59,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary">
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-gray-200 bg-hero bg-cover bg-center">
         <img
           src={bigShoe1}
           alt="shoe collection"
@@ -67,6 +68,17 @@ const Hero = () => {
           width={610}
           className="object-contain relative z-10"
         />
+        <div>
+          {shoes.map((shoe) => {
+            <div>
+              <ShoeCard
+                imgURL={shoe}
+                changeBigShoeImage={() => ({})}
+                bigShoeImg
+              />
+            </div>;
+          })}
+        </div>
       </div>
     </section>
   );
