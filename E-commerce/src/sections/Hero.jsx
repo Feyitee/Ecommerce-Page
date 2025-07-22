@@ -12,9 +12,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex flex-col xl:flex-row min-h-screen
-     border-red-500 border-2
-     justify-center gap-10 max-container"
+      className="w-full flex flex-col xl:flex-row min-h-screen     justify-center gap-10 max-container"
     >
       <div
         className="relative xl:w-2/5 flex flex-col 
@@ -63,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+      <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-gray-200 bg-hero bg-cover bg-center">
         <img
           src={bigShoeImg}
           alt="shoe colletion"
