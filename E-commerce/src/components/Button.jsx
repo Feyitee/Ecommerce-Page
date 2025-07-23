@@ -8,11 +8,13 @@ const Button = ({ label, iconUrl }) => {
     bg-red-400 border-red-400 rounded-full text-white"
     >
       Click Me
-      <img
-        src={iconUrl}
-        alt="arrow right icon"
-        className="ml-2 rounded-full w-5 h-5"
-      />
+      {iconUrl && (
+        <img
+          src={iconUrl}
+          alt="arrow right icon"
+          className="ml-2 rounded-full w-5 h-5"
+        />
+      )}
     </button>
   );
 };
