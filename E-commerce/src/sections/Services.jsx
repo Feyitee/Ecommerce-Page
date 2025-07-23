@@ -1,5 +1,7 @@
 import React from "react";
-im;
+import { services } from "../constants";
+import ServiceCard from "../components/ServiceCard";
+
 const Services = () => {
   return (
     <section
